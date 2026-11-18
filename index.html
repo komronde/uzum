@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6d35d4">
+  <meta name="description" content="Ziyo Market — kundalik xaridlar uchun qulay onlayn do‘kon.">
+  <title>Ziyo Market — yoqimli xaridlar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="kk.css">
+  <script src="a.js" defer></script>
+</head>
+<body>
+  <div class="topline">
+    <div class="container topline-inner">
+      <span class="delivery-note"><span class="delivery-dot"></span> Toshkent bo‘ylab tezkor yetkazib berish</span>
+      <div class="topline-links">
+        <a href="#delivery">Yetkazib berish</a>
+        <a href="#about">Biz haqimizda</a>
+        <button class="language-button" type="button" aria-label="Tilni tanlash">O‘zbekcha <span>⌄</span></button>
+      </div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-main">
+      <a class="brand" href="#" aria-label="Ziyo Market bosh sahifa">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-name">ziyo<span>market</span></span>
+      </a>
+      <button class="catalog-button" id="catalogButton" type="button"><span class="catalog-icon">☷</span> Katalog</button>
+      <form class="search-form" id="searchForm" role="search">
+        <input id="searchInput" type="search" placeholder="Mahsulotlarni qidiring..." aria-label="Mahsulotlarni qidiring">
+        <button type="submit" aria-label="Qidirish"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg></button>
+      </form>
+      <div class="header-actions">
+        <button class="header-action favorite-shortcut" id="favoritesShortcut" type="button" aria-label="Sevimlilar">
+          <span class="action-icon">♡</span><span>Sevimlilar</span>
+        </button>
+        <button class="header-action cart-shortcut" id="cartButton" type="button" aria-label="Savatcha">
+          <span class="action-icon">▱<i id="cartCount">0</i></span><span>Savatcha</span>
+        </button>
+      </div>
+    </div>
+    <div class="container category-nav" id="categoryNav" aria-label="Mahsulot kategoriyalari">
+      <button class="nav-category active" type="button" data-category="Hammasi">Hammasi</button>
+      <button class="nav-category" type="button" data-category="Elektronika">Elektronika</button>
+      <button class="nav-category" type="button" data-category="Uy uchun">Uy uchun</button>
+      <button class="nav-category" type="button" data-category="Go‘zallik">Go‘zallik</button>
+      <button class="nav-category" type="button" data-category="Kiyim">Kiyim</button>
+      <button class="nav-category" type="button" data-category="Sport">Sport</button>
+      <a class="nav-sale" href="#products">🔥 Ajoyib chegirmalar</a>
+    </div>
+  </header>
+  <main>
+    <section class="container hero-section">
+      <div class="hero-copy">
+        <span class="hero-kicker"><span class="sparkle">✦</span> HAFTA TAKLIFI</span>
+        <h1>Yoqimli xaridlar,<br><em>yanada yoqimli</em> narxlar.</h1>
+        <p>Har kuni kerakli narsalar — bir joyda. Sevimli mahsulotlaringizni toping va uyingizgacha buyurtma qiling.</p>
+        <a href="#products" class="hero-cta">Xaridni boshlash <span>→</span></a>
+        <div class="hero-proof"><span class="proof-avatars"><i>😊</i><i>😎</i><i>🙂</i></span><span><b>25 000+</b> mamnun xaridor</span><span class="proof-stars">★★★★★</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-product hero-product-main"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=85" alt="Simsiz quloqchin"></div>
+        <div class="hero-product hero-product-small"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=85" alt="Sport oyoq kiyimi"></div>
+        <div class="hero-sticker"><strong>-40%</strong><span>gacha<br>chegirma</span></div>
+        <div class="floating-note"><span>✦</span> Bugun tanlanganlar</div>
+      </div>
+      <div class="hero-pagination"><span class="current"></span><span></span><span></span><small>01 / 03</small></div>
+    </section>
+    <section class="container benefit-strip" id="delivery">
+      <article class="benefit"><span class="benefit-icon purple">↗</span><div><strong>Tez yetkazib berish</strong><small>Buyurtmangiz eshigingizgacha</small></div></article>
+      <article class="benefit"><span class="benefit-icon peach">♡</span><div><strong>Yoqimli narxlar</strong><small>Har kuni yangi chegirmalar</small></div></article>
+      <article class="benefit"><span class="benefit-icon mint">✓</span><div><strong>Ishonchli xarid</strong><small>Sifatga kafolat beramiz</small></div></article>
+      <article class="benefit"><span class="benefit-icon yellow">↺</span><div><strong>Qulay qaytarish</strong><small>14 kun ichida oson qaytarish</small></div></article>
+    </section>
+    <section class="container categories-section" id="categories">
+      <div class="section-heading">
+        <div><span class="eyebrow">O‘ZINGIZGA KERAKLISINI TOPING</span><h2>Kategoriyalar</h2></div>
+        <a href="#products" class="text-link">Barchasini ko‘rish <span>→</span></a>
+      </div>
+      <div class="category-cards">
+        <button class="category-card category-tech" type="button" data-pick-category="Elektronika"><span class="category-emoji">🎧</span><span class="category-card-title">Elektronika</span><small>Yangi texnologiyalar</small><span class="category-arrow">↗</span></button>
+        <button class="category-card category-home" type="button" data-pick-category="Uy uchun"><span class="category-emoji">🪴</span><span class="category-card-title">Uy uchun</span><small>Uyingizga fayz qo‘shing</small><span class="category-arrow">↗</span></button>
+        <button class="category-card category-beauty" type="button" data-pick-category="Go‘zallik"><span class="category-emoji">✨</span><span class="category-card-title">Go‘zallik</span><small>O‘zingizga g‘amxo‘rlik</small><span class="category-arrow">↗</span></button>
+        <button class="category-card category-style" type="button" data-pick-category="Kiyim"><span class="category-emoji">👟</span><span class="category-card-title">Kiyim</span><small>Har kun uchun uslub</small><span class="category-arrow">↗</span></button>
+      </div>
+    </section>
+    <section class="container products-section" id="products">
+      <div class="section-heading product-heading">
+        <div><span class="eyebrow">SIZ UCHUN TANLADIK</span><h2 id="productsTitle">Ommabop mahsulotlar <span class="title-spark">✦</span></h2></div>
+        <div class="product-controls">
+          <label class="sort-label" for="sortSelect">Saralash:</label>
+          <select id="sortSelect" aria-label="Mahsulotlarni saralash">
+            <option value="popular">Ommabop</option>
+            <option value="price-low">Avval arzonlari</option>
+            <option value="price-high">Avval qimmatlari</option>
+          </select>
+        </div>
+      </div>
+      <div class="active-filter" id="activeFilter" hidden></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <span>🔎</span><h3>Hech narsa topilmadi</h3><p>Boshqa so‘z bilan qidirib ko‘ring.</p>
+        <button type="button" id="clearSearch">Barcha mahsulotlarni ko‘rish</button>
+      </div>
+      <button class="load-more" id="loadMore" type="button">Yana ko‘proq ko‘rish <span>↓</span></button>
+    </section>
+    <section class="container promo-banner" id="about">
+      <div class="promo-copy"><span class="eyebrow">ZIYO CLUB</span><h2>Yaxshi xaridlar<br>yanada foydali!</h2><p>Ilovamizni yuklab oling va maxsus takliflardan birinchilardan bo‘lib xabardor bo‘ling.</p><a href="#products">Batafsil <span>→</span></a></div>
+      <div class="promo-visual"><div class="promo-circle"></div><div class="phone-mock"><div class="phone-speaker"></div><span class="phone-logo">z</span><span class="phone-line"></span><span class="phone-line short"></span><span class="phone-product">🎁</span><span class="phone-button"></span></div><div class="promo-confetti">✦<br>✳</div></div>
+      <div class="promo-tag">Maxsus<br><b>takliflar</b></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span class="brand-name">ziyo<span>market</span></span></a><p>Yaxshi xaridlar — yaxshi kayfiyat.</p></div>
+      <div class="footer-column"><strong>Ma’lumot</strong><a href="#about">Biz haqimizda</a><a href="#delivery">Yetkazib berish</a><a href="#delivery">Qaytarish va almashtirish</a></div>
+      <div class="footer-column"><strong>Aloqa</strong><a href="tel:+998712000707">+998 71 200 07 07</a><a href="mailto:salom@ziyo.uz">salom@ziyo.uz</a><span>Har kuni, 09:00 — 21:00</span></div>
+      <div class="footer-social"><strong>Bizni kuzating</strong><div><a href="#about" aria-label="Instagram">ig</a><a href="#about" aria-label="Telegram">tg</a><a href="#about" aria-label="Facebook">f</a></div></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2025 Ziyo Market. Barcha huquqlar himoyalangan.</span><span>To‘lov usullari: <b>UZCARD</b> <b>HUMO</b> <b>VISA</b></span></div>
+  </footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Savatcha" aria-hidden="true">
+    <div class="drawer-header"><div><span class="eyebrow">SIZNING TANLOVINGIZ</span><h2>Savatcha <span id="drawerCount">(0)</span></h2></div><button id="closeCart" class="close-button" type="button" aria-label="Savatchani yopish">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>🛍️</span><strong>Savatchangiz hozircha bo‘sh</strong><p>Yoqtirgan mahsulotlaringizni shu yerga qo‘shing.</p><button id="continueShopping" type="button">Xaridni davom ettirish</button></div>
+    <div class="cart-summary" id="cartSummary"><div><span>Jami</span><strong id="cartTotal">0 so‘m</strong></div><button id="checkoutButton" type="button">Buyurtma berish <span>→</span></button><small>Yetkazib berish narxi buyurtma vaqtida hisoblanadi</small></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
